@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<meta name="description" content="THE OFFICIAL MAAM WEB STORE. UNVEIL THE BOSS IN YOU!">
+<script type="text/javascript">
+  if( /Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent) ) {
+         document.write('<link rel="stylesheet" type="text/css" href="intromobile.css" />')
+  }
+  else{
+    document.write('<link rel="stylesheet" type="text/css" href="intro.css" />')
+  }
+  </script>
+<link rel="shortcut icon" type="image/gif" href="infinity.gif">
+<title>ORTO PARISI</title>
+	<link rel="canonical" href="http://ortoparisi.com" />
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-55687292-1', 'auto');
+    ga('send', 'pageview');
+    function toggleElement() {
+      var elm = document.getElementById("play-link");
+      if (elm.textContent == "play") {
+        document.getElementById('player').play();
+        elm.textContent = "pause";
+      } else {
+        document.getElementById('player').pause();
+        elm.textContent = "play";
+      }
+    }
+</script>
+<style>
+    @font-face {
+        font-family: Avenir;
+        src: url('Avenir.ttf'),
+             url('Avenir.eot'); /* IE9 */
+    }
+    div#playbutton{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        padding: 25px 0px;
+        display: flex;
+        justify-content: center;
+    }
+    div#playbutton a{
+        font-size: 23px;
+        font-family: Avenir, Noto Sans,sans-serif;
+    }
+</style>
+</head>
+<body class="intro" onselectstart="return false" oncontextmenu="return false" ondragstart="return false" onMouseOver="window.status='made by Nasomatto'; return true;">
+    <div id="playbutton">
+        <a href="#" onclick="toggleElement();" style=" color: #fff; text-decoration: none; " id="play-link">play</a>
+    </div>
+    <div class="header">
+    </div>
+    <div class="content" onclick="window.location.href='/shop/'">
+        <div class="intro-welkom" onclick="window.location='/shop/'"></div>
+        <audio id="player" autoplay preload="auto">
+          <source src="Cavalcata2.mp3" type="audio/mpeg">
+          <source src="Cavalcata.wav" type="audio/wav">
+          <embed hidden="true" autoplay="true" loop="true" src="Cavalcata.mp3">
+        </audio>
+    </div>
+</html>
